@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'screens/tickets.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -301,12 +303,3 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-class TicketScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("Tickets")),
-      body: Center(child: Text("This is the Tickets Screen")),
-    );
-  }
-}
