@@ -155,7 +155,7 @@ class TicketScreen extends StatelessWidget {
           Positioned(
             right: -2,
             top: -2,
-            child: NotificationBadge(count: 4),
+            child: NotificationBadge(count: 4), //notifiction badge
           ),
         ],
       ),
@@ -260,6 +260,7 @@ class TicketTile extends StatelessWidget {
                     ),
                   ),
                 const SizedBox(width: 6),
+                //priority colors
                 Chip(
                   label: Text(priority),
                   backgroundColor: getPriorityColor(priority),
@@ -267,6 +268,7 @@ class TicketTile extends StatelessWidget {
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                 ),
                 const SizedBox(width: 6),
+                //status colors
                 Chip(
                   label: Text(status),
                   backgroundColor: getStatusColor(status),
@@ -277,23 +279,29 @@ class TicketTile extends StatelessWidget {
             ),
 
             const SizedBox(height: 6),
+
+            //ticket title
             Text(
               title,
               style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w500),
             ),
             const SizedBox(height: 4),
+
+            //location
             Text(
               location,
               style: const TextStyle(fontSize: 13, color: Colors.grey),
             ),
             const SizedBox(height: 12),
 
-            // Bottom Row
             Row(
               children: [
+                //time
                 Text(time, style: const TextStyle(fontSize: 12, color: Colors.grey)),
                 const Spacer(),
+                
                 Row(
+                  //assignees
                   children: assignees.map((e) {
                     return Padding(
                       padding: const EdgeInsets.only(left: 4),
