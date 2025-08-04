@@ -42,7 +42,6 @@ class TicketScreen extends StatelessWidget {
 
       body: Column(
         children: [
-          // Search + Filter
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             child: Row(
@@ -138,7 +137,7 @@ class TicketScreen extends StatelessWidget {
   selectedItemColor: Colors.white,
   unselectedItemColor: Colors.grey,
   currentIndex: 0,
-  onTap: (index) {}, // handle navigation here
+  onTap: (index) {},
   items: [
     BottomNavigationBarItem(
       icon: Icon(Icons.home),
@@ -156,7 +155,7 @@ class TicketScreen extends StatelessWidget {
           Positioned(
             right: -2,
             top: -2,
-            child: NotificationBadge(count: 4), // 🛑 badge here
+            child: NotificationBadge(count: 4),
           ),
         ],
       ),
